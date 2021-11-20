@@ -1,0 +1,114 @@
+body{
+    background-image: url(../img/Simpsons-Zoom-Background@2x.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.background{
+    z-index: -1;
+    max-width: 100%;
+    float: left;
+}
+
+#gordijn{
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    margin-top: 107px;
+    margin-left: 87px;
+    z-index: 5;
+}
+#gordijn.open{
+    display: block;
+    background-image: url(../img/gordijn-cartoon_2@2x.png);
+    background-repeat: no-repeat;
+}
+
+
+
+#kalender{
+  position: absolute;
+  right: 620px;
+  top: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+#kalenderimg{
+  float: left;
+}
+#Maand{
+  position: absolute;
+  float: left;
+  top: 4px;
+  left: 20px;
+}
+
+#Dag{
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+#Dagletter{
+  position: absolute;
+  top: 83px;
+  left: 23px;
+}
+
+
+
+
+#clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px 500px;
+    background: url(../img/clockface@2x-change.png);
+    list-style: none;
+  }
+  
+  #sec, #min, #hour {
+    position: absolute;
+    width: 12.5px;
+    height: 250px;
+    top: 0px;
+    left: 118px;
+  }
+  
+  #sec {
+    background: url(../img/sechand@2x-change.png);
+    z-index: 3;
+  }
+     
+  #min {
+    background: url(../img/minhand@2x-change.png);
+    z-index: 2;
+  }
+     
+  #hour {
+    background: url(../img/hourhand@2x-change.png);
+    z-index: 1;
+  }
+
+  /*einde klok*/
+
+  #lights{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+  }
+
+  #blackbox{
+    position: fixed;
+    top: 0;
+    float: left;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+  #blackbox.on{
+    display: block;
+  }
